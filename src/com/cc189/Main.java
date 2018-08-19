@@ -10,6 +10,8 @@ public class Main {
         testIsUnique();
         //test CheckPermutation
         testCheckPermutation();
+        //test PalindromePermutation
+        testCheckPalindromePermutation();
     }
 
     private static void testIsUnique() {
@@ -27,9 +29,21 @@ public class Main {
         String[] inputsTwo = {"a", "cba", "bab", "abc"};
         boolean[] results = {true, true, true, false};
         CheckPermutation checkPermutation = new CheckPermutation();
-        for(int i = 0; i < inputsOne.length; i++){
+        for(int i = 0; i < inputsOne.length; i++) {
             boolean result = checkPermutation.isPermutation(inputsOne[i], inputsTwo[i]);
             assert result == results[i];
+        }
+    }
+
+    private static void testCheckPalindromePermutation() {
+        String[] inputs = {"a", "abcba", "accbb", "aaabbb"};
+        boolean[] results = {true, true, true, false};
+        PalindromePermutation palindromePermutation = new PalindromePermutation();
+        for(int i = 0; i < inputs.length; i++) {
+            boolean result = palindromePermutation.isPalindromePermutation(inputs[i]);
+            assert result == results[i];
+            boolean newResult = palindromePermutation.isPalindromePermutationByBits(inputs[i]);
+            assert  newResult == results[i];
         }
     }
 }
