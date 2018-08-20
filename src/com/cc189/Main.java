@@ -14,6 +14,8 @@ public class Main {
         testCheckPalindromePermutation();
         //test OneAway
         testOneAway();
+        //test StringCompression
+        testStringCompression();
     }
 
     private static void testIsUnique() {
@@ -57,6 +59,16 @@ public class Main {
         for (int i = 0; i < inputs1.length; i++) {
             boolean result = oneAway.oneEditAway(inputs1[i], inputs1[i]);
             assert result == results[i];
+        }
+    }
+
+    private static void testStringCompression() {
+        String[] inputs = {"aabbccddd", "abcde"};
+        String[] results = {"a2b2c2d3", "abcde"};
+        StringCompression stringCompression = new StringCompression();
+        for (int i = 0; i < inputs.length; i++) {
+            String result = stringCompression.stringCompression(inputs[i]);
+            assert result.equals(results[i]);
         }
     }
 }
