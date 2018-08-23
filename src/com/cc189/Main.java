@@ -18,6 +18,10 @@ public class Main {
         testStringCompression();
         //test RotateMatrix
         testRotateMatrix();
+        //test MyLinkedList
+        testMyLinkedList();
+        //test KthToLast
+        testKthToLast();
     }
 
     private static void testIsUnique() {
@@ -84,5 +88,28 @@ public class Main {
             }
             System.out.println();
         }
+    }
+
+    private static void testMyLinkedList() {
+        MyLinkedList myLinkedList = new MyLinkedList(33);
+        MyNode head = myLinkedList.getHead();
+        System.out.print(head.getData());
+        System.out.println();
+        myLinkedList.addToEnd(99);
+        myLinkedList.printAllNodes();
+    }
+
+    private static void testKthToLast() {
+        MyLinkedList myLinkedList = new MyLinkedList(33);
+        myLinkedList.addToEnd(99);
+        myLinkedList.addToEnd(333);
+        myLinkedList.addToEnd(9999);
+        KthToLast kthToLast = new KthToLast();
+        int k = kthToLast.printKthToLast(myLinkedList.getHead(), 2);
+        MyNode node = kthToLast.kthToLast(myLinkedList.getHead(), 2);
+        System.out.print(node.getData());
+        System.out.println();
+        MyNode nodeTwo = kthToLast.kthToLastTwo(myLinkedList.getHead(), 2);
+        assert node.getData().equals(nodeTwo.getData());
     }
 }
