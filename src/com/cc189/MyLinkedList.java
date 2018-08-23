@@ -18,6 +18,7 @@ class MyLinkedList {
         }
         MyNode node = new MyNode(data);
         finder.setNext(node);
+        node.setPrevious(finder);
     }
 
     public void printAllNodes() {
@@ -43,6 +44,7 @@ class MyNode {
     public Object getData() {
         return data;
     }
+    public void setData(Object value) { data = value; }
     public MyNode getNext() { return next; }
     public void setNext(MyNode node) { next = node; }
     public MyNode getPrevious() {return previous; }
