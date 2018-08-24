@@ -22,6 +22,10 @@ public class Main {
         testMyLinkedList();
         //test KthToLast
         testKthToLast();
+        //test Partition
+        testPartition();
+        //test SumLists
+        testSumLists();
     }
 
     private static void testIsUnique() {
@@ -93,10 +97,13 @@ public class Main {
     private static void testMyLinkedList() {
         MyLinkedList myLinkedList = new MyLinkedList(33);
         MyNode head = myLinkedList.getHead();
-        System.out.print(head.getData());
-        System.out.println();
+        // System.out.print(head.getData());
+        // System.out.println();
         myLinkedList.addToEnd(99);
-        myLinkedList.printAllNodes();
+        myLinkedList.addToStart(3);
+        // myLinkedList.printAllNodes();
+        // System.out.print(myLinkedList.getLength());
+        // System.out.println();
     }
 
     private static void testKthToLast() {
@@ -107,9 +114,39 @@ public class Main {
         KthToLast kthToLast = new KthToLast();
         int k = kthToLast.printKthToLast(myLinkedList.getHead(), 2);
         MyNode node = kthToLast.kthToLast(myLinkedList.getHead(), 2);
-        System.out.print(node.getData());
-        System.out.println();
+        // System.out.print(node.getData());
+        // System.out.println();
         MyNode nodeTwo = kthToLast.kthToLastTwo(myLinkedList.getHead(), 2);
         assert node.getData().equals(nodeTwo.getData());
+    }
+
+    private static void testPartition() {
+        MyLinkedList myLinkedList = new MyLinkedList(33);
+        myLinkedList.addToEnd(99);
+        myLinkedList.addToEnd(3);
+        myLinkedList.addToEnd(18);
+        // myLinkedList.printAllNodes();
+        Partition partition = new Partition();
+        MyNode node = partition.partition(myLinkedList, 33);
+        MyLinkedList ll = new MyLinkedList(node);
+        // ll.printAllNodes();
+    }
+
+    private static void testSumLists() {
+        SumLists sumLists = new SumLists();
+        MyLinkedList list1 = new MyLinkedList(5);
+        MyLinkedList list2 = new MyLinkedList(6);
+        list1.addToEnd(1);
+        list1.addToEnd(6);
+        list2.addToEnd(3);
+        list2.addToEnd(9);
+        MyNode result1 = sumLists.sumLists(list1.getHead(), list2.getHead(), 0);
+        MyLinkedList results1 = new MyLinkedList(result1);
+        // results1.printAllNodes();
+
+        list1.addToEnd(9);
+        MyNode result2 = sumLists.addLists(list1, list2);
+        MyLinkedList results2 = new MyLinkedList(result2);
+        results2.printAllNodes();
     }
 }

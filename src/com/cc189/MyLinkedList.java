@@ -7,8 +7,22 @@ class MyLinkedList {
         head = new MyNode(data);
     }
 
+    public MyLinkedList(MyNode node) {
+        head = node;
+    }
+
     public MyNode getHead() {
         return head;
+    }
+
+    public int getLength() {
+        int cnt = 0;
+        MyNode tracker = head;
+        while (tracker != null) {
+            cnt = cnt + 1;
+            tracker = tracker.getNext();
+        }
+        return cnt;
     }
 
     public void addToEnd(Object data) {
@@ -19,6 +33,13 @@ class MyLinkedList {
         MyNode node = new MyNode(data);
         finder.setNext(node);
         node.setPrevious(finder);
+    }
+
+    public void addToStart(Object data) {
+        MyNode newHead = new MyNode(data);
+        newHead.setNext(head);
+        head.setPrevious(newHead);
+        head = newHead;
     }
 
     public void printAllNodes() {
