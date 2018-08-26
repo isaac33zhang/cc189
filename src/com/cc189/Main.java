@@ -26,6 +26,8 @@ public class Main {
         testPartition();
         //test SumLists
         testSumLists();
+        //test Palindrome
+        testLLPalindrome();
     }
 
     private static void testIsUnique() {
@@ -148,5 +150,16 @@ public class Main {
         MyNode result2 = sumLists.addLists(list1, list2);
         MyLinkedList results2 = new MyLinkedList(result2);
         results2.printAllNodes();
+    }
+
+    private static void testLLPalindrome() {
+        MyLinkedList testList = new MyLinkedList(1);
+        testList.addToEnd(0);
+        testList.addToEnd(3);
+        testList.addToEnd(3);
+        testList.addToEnd(0);
+        testList.addToEnd(1);
+        Palindrome palindrome = new Palindrome();
+        assert palindrome.isPalindrome(testList);
     }
 }
