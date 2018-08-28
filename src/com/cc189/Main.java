@@ -28,6 +28,10 @@ public class Main {
         testSumLists();
         //test Palindrome
         testLLPalindrome();
+        //test MultiStack
+        testMultiStack();
+        //test QueueViaStacks
+        testQueueViaStacks();
     }
 
     private static void testIsUnique() {
@@ -161,5 +165,19 @@ public class Main {
         testList.addToEnd(1);
         Palindrome palindrome = new Palindrome();
         assert palindrome.isPalindrome(testList);
+    }
+
+    private static void testMultiStack() {
+        MultiStack multiStack = new MultiStack(3, 10);
+    }
+
+    private static void testQueueViaStacks() {
+        QueueViaStacks queueViaStacks = new QueueViaStacks();
+        queueViaStacks.add(1);
+        queueViaStacks.add(2);
+        queueViaStacks.add(3);
+        System.out.print(queueViaStacks.peek());
+        System.out.print(queueViaStacks.remove());
+        System.out.print(queueViaStacks.peek());
     }
 }
