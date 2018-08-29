@@ -23,4 +23,6 @@ class TreeNode {
     public TreeNode(int data) {
         value = data;
     }
+
+    int getValue() {return value;}
 }
