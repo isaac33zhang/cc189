@@ -3,6 +3,10 @@ package com.cc189;
 class MyLinkedList {
     private MyNode head;
 
+    public MyLinkedList() {
+        head = null;
+    }
+
     public MyLinkedList(Object data) {
         head = new MyNode(data);
     }
@@ -26,20 +30,28 @@ class MyLinkedList {
     }
 
     public void addToEnd(Object data) {
-        MyNode finder = head;
-        while (finder.getNext() != null) {
-            finder = finder.getNext();
+        if (head == null) {
+            head = new MyNode(data);
+        } else {
+            MyNode finder = head;
+            while (finder.getNext() != null) {
+                finder = finder.getNext();
+            }
+            MyNode node = new MyNode(data);
+            finder.setNext(node);
+            node.setPrevious(finder);
         }
-        MyNode node = new MyNode(data);
-        finder.setNext(node);
-        node.setPrevious(finder);
     }
 
     public void addToStart(Object data) {
-        MyNode newHead = new MyNode(data);
-        newHead.setNext(head);
-        head.setPrevious(newHead);
-        head = newHead;
+        if (head == null) {
+            head = new MyNode(data);
+        } else {
+            MyNode newHead = new MyNode(data);
+            newHead.setNext(head);
+            head.setPrevious(newHead);
+            head = newHead;
+        }
     }
 
     public void printAllNodes() {
