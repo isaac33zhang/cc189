@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05a32459-8b90-4a44-8716-63d113a33af3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/cc189/BSTSequences.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/cc189/CheckSubtree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,7 +41,7 @@
         <counts>
           <entry key="groovy" value="1" />
           <entry key="iml" value="1" />
-          <entry key="java" value="43" />
+          <entry key="java" value="44" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
@@ -49,18 +49,18 @@
         <counts>
           <entry key="Groovy" value="1" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="43" />
+          <entry key="JAVA" value="44" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="16101" />
+          <entry key="java" value="16481" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="16101" />
+          <entry key="JAVA" value="16481" />
         </counts>
       </usages-collector>
     </session>
@@ -79,23 +79,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/cc189/FirstCommonAncestor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
+            <state relative-caret-position="630">
               <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/cc189/BSTSequences.java">
+        <entry file="file://$PROJECT_DIR$/src/com/cc189/CheckSubtree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#226#247#0" expanded="true" />
-                <element signature="e#420#429#0" expanded="true" />
-                <element signature="e#797#818#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="361">
+              <caret line="25" column="80" selection-start-line="25" selection-start-column="80" selection-end-line="25" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -154,6 +148,7 @@
         <option value="$PROJECT_DIR$/src/com/cc189/Successor.java" />
         <option value="$PROJECT_DIR$/src/com/cc189/FirstCommonAncestor.java" />
         <option value="$PROJECT_DIR$/src/com/cc189/BSTSequences.java" />
+        <option value="$PROJECT_DIR$/src/com/cc189/CheckSubtree.java" />
       </list>
     </option>
   </component>
@@ -470,13 +465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cc189/FirstCommonAncestor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cc189/BSTSequences.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
@@ -487,6 +475,20 @@
             <element signature="e#420#429#0" expanded="true" />
             <element signature="e#797#818#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cc189/FirstCommonAncestor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cc189/CheckSubtree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="25" column="80" selection-start-line="25" selection-start-column="80" selection-end-line="25" selection-end-column="80" />
         </state>
       </provider>
     </entry>
