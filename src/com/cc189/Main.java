@@ -32,6 +32,10 @@ public class Main {
         testMultiStack();
         //test QueueViaStacks
         testQueueViaStacks();
+        //test TripleStep
+        testTripleStep();
+        //test RobotInAGrid
+        testRobotInAGrid();
     }
 
     private static void testIsUnique() {
@@ -179,5 +183,17 @@ public class Main {
         System.out.print(queueViaStacks.peek());
         System.out.print(queueViaStacks.remove());
         System.out.print(queueViaStacks.peek());
+        System.out.println();
+    }
+
+    private static void testTripleStep() {
+        TripleStep tripleStep = new TripleStep();
+        assert tripleStep.countWays(3) == 6;
+    }
+
+    private static void testRobotInAGrid() {
+        RobotInACrid robotInACrid = new RobotInACrid();
+        boolean[][] matrix = {{true, true}, {false, true}, {true, true}};
+        System.out.print(robotInACrid.getPath(matrix));
     }
 }
