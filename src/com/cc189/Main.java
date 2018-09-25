@@ -2,6 +2,8 @@ package com.cc189;
 
 import com.cc189.*;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -36,6 +38,12 @@ public class Main {
         testTripleStep();
         //test RobotInAGrid
         testRobotInAGrid();
+        //test PowerSet
+        testPowerSet();
+        //test PermutationWithNoDup
+        testPermutationWithNoDup();
+        //test Parens
+        testParens();
     }
 
     private static void testIsUnique() {
@@ -195,5 +203,30 @@ public class Main {
         RobotInACrid robotInACrid = new RobotInACrid();
         boolean[][] matrix = {{true, true}, {false, true}, {true, true}};
         System.out.print(robotInACrid.getPath(matrix));
+        System.out.println();
+    }
+
+    private static void testPowerSet() {
+        PowerSet powerSet = new PowerSet();
+        ArrayList<Integer> input = new ArrayList<Integer>();
+        input.add(1);
+        input.add(2);
+        input.add(3);
+        ArrayList<ArrayList<Integer>> results = powerSet.getSubsets(input, 3);
+        System.out.print(results);
+        System.out.println();
+    }
+
+    private static void testPermutationWithNoDup() {
+        PermutationWithNoDup permutationWithNoDup = new PermutationWithNoDup();
+        ArrayList<String> results = permutationWithNoDup.getPermutations("abc");
+        assert results.size() == 6;
+    }
+
+    private static void testParens() {
+        Parens parens = new Parens();
+        ArrayList<String> results = parens.parens(3);
+        System.out.print(results);
+        System.out.println();
     }
 }
