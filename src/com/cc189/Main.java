@@ -44,6 +44,8 @@ public class Main {
         testPermutationWithNoDup();
         //test Parens
         testParens();
+        //test Coins
+        testCoins();
     }
 
     private static void testIsUnique() {
@@ -228,5 +230,11 @@ public class Main {
         ArrayList<String> results = parens.parens(3);
         System.out.print(results);
         System.out.println();
+    }
+
+    private static void testCoins() {
+        Coins coins = new Coins();
+        int ways = coins.ways(25);
+        assert ways == 13;
     }
 }
