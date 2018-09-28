@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05a32459-8b90-4a44-8716-63d113a33af3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/cc189/Coins.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/cc189/EightQueens.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cc189/com/cc189/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cc189/com/cc189/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/cc189/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cc189/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -44,7 +43,7 @@
         <counts>
           <entry key="groovy" value="1" />
           <entry key="iml" value="1" />
-          <entry key="java" value="69" />
+          <entry key="java" value="70" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
@@ -52,29 +51,29 @@
         <counts>
           <entry key="Groovy" value="1" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="69" />
+          <entry key="JAVA" value="70" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="23153" />
+          <entry key="java" value="23744" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="23153" />
+          <entry key="JAVA" value="23744" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/cc189/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="237" column="26" selection-start-line="237" selection-start-column="26" selection-end-line="237" selection-end-column="26" />
+            <state relative-caret-position="213">
+              <caret line="245" column="33" selection-start-line="245" selection-start-column="33" selection-end-line="245" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#7289#7298#0" expanded="true" />
@@ -83,11 +82,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/cc189/Coins.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/cc189/EightQueens.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+            <state relative-caret-position="19">
+              <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+              <folding>
+                <element signature="e#117#128#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,6 +166,7 @@
         <option value="$PROJECT_DIR$/src/com/cc189/PaintFill.java" />
         <option value="$PROJECT_DIR$/src/com/cc189/Coins.java" />
         <option value="$PROJECT_DIR$/src/com/cc189/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/cc189/EightQueens.java" />
       </list>
     </option>
   </component>
@@ -308,9 +311,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.328594" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32861635" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.30379745" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3022152" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3270142" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32594937" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -323,7 +326,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/cc189/IsUniqueTest.groovy" />
     <entry file="file://$PROJECT_DIR$/src/com/cc189/IsUnique.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -652,11 +654,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cc189/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="237" column="26" selection-start-line="237" selection-start-column="26" selection-end-line="237" selection-end-column="26" />
+        <state relative-caret-position="213">
+          <caret line="245" column="33" selection-start-line="245" selection-start-column="33" selection-end-line="245" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#7289#7298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cc189/EightQueens.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+          <folding>
+            <element signature="e#117#128#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -46,6 +46,8 @@ public class Main {
         testParens();
         //test Coins
         testCoins();
+        //test EightQueens
+        testEightQueens();
     }
 
     private static void testIsUnique() {
@@ -236,5 +238,13 @@ public class Main {
         Coins coins = new Coins();
         int ways = coins.ways(25);
         assert ways == 13;
+    }
+
+    private static void testEightQueens() {
+        EightQueens eightQueens = new EightQueens();
+        Integer[] cols = new Integer[8];
+        eightQueens.placeQueen(0, cols);
+        System.out.print(eightQueens.results);
+        System.out.println();
     }
 }
